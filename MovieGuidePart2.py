@@ -1,11 +1,11 @@
 FILENAME = "Movies.txt"
 
 def write_movies(movies):
-    with open(FILENAME, "w") as files:
+    with open(FILENAME, "w") as file:
         for movie in movies:
-            file.write(f"{mpvie}\n")
+            file.write(f"{movie}\n")
 
-def read_movie():
+def read_movies():
     movies = []
     with open(FILENAME) as file:
         for line in file:
